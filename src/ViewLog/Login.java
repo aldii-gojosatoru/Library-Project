@@ -30,7 +30,7 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        LoginPanel = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
@@ -55,8 +55,8 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        LoginPanel.setBackground(new java.awt.Color(255, 255, 255));
+        LoginPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setBackground(new java.awt.Color(204, 204, 204));
 
@@ -77,56 +77,61 @@ public class Login extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(295, 0, -1, -1));
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 140, 170, 35));
+        LoginPanel.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(295, 0, -1, -1));
+        LoginPanel.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 140, 170, 35));
 
         jLabel1.setBackground(new java.awt.Color(51, 51, 51));
         jLabel1.setFont(new java.awt.Font("Sitka Text", 0, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(51, 51, 51));
         jLabel1.setText("Welcome!");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, -1, -1));
+        LoginPanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, -1, -1));
 
         Password.setFont(new java.awt.Font("Serif", 0, 12)); // NOI18N
         Password.setForeground(new java.awt.Color(102, 102, 102));
         Password.setText("Password");
-        jPanel1.add(Password, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, 62, -1));
+        LoginPanel.add(Password, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, 62, -1));
 
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField2ActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, 170, 35));
+        LoginPanel.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, 170, 35));
 
         Username.setFont(new java.awt.Font("Serif", 0, 12)); // NOI18N
         Username.setForeground(new java.awt.Color(102, 102, 102));
         Username.setText("Username");
-        jPanel1.add(Username, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, 62, -1));
+        LoginPanel.add(Username, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, 62, -1));
 
         Login.setBackground(new java.awt.Color(102, 204, 255));
         Login.setFont(new java.awt.Font("Serif", 0, 12)); // NOI18N
         Login.setText("LOGIN");
+        Login.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                LoginMouseClicked(evt);
+            }
+        });
         Login.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LoginActionPerformed(evt);
             }
         });
-        jPanel1.add(Login, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 170, 30));
+        LoginPanel.add(Login, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 170, 30));
 
         Registrasi.setBackground(new java.awt.Color(102, 204, 255));
         Registrasi.setFont(new java.awt.Font("Serif", 0, 12)); // NOI18N
         Registrasi.setText("Registrasi");
-        jPanel1.add(Registrasi, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 290, -1, 30));
+        LoginPanel.add(Registrasi, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 290, -1, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(LoginPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(LoginPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -153,6 +158,13 @@ public class Login extends javax.swing.JFrame {
     private void LoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_LoginActionPerformed
+
+    private void LoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LoginMouseClicked
+        LoginPanel.removeAll();
+        LoginPanel.add(new MenuAnggota1());
+        LoginPanel.repaint();
+        LoginPanel.revalidate();        
+    }//GEN-LAST:event_LoginMouseClicked
 
     /**
      * @param args the command line arguments
@@ -191,12 +203,12 @@ public class Login extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Login;
+    private javax.swing.JPanel LoginPanel;
     private javax.swing.JLabel Password;
     private javax.swing.JButton Registrasi;
     private javax.swing.JLabel Username;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;

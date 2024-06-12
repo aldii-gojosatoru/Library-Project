@@ -5,6 +5,8 @@
 package Main;
 
 import ViewLog.MenuDashboard;
+import ViewLog.MenuAnggota1;
+import ViewLog.MenuBuku;
 import java.awt.Color;
 /**
  *
@@ -13,7 +15,7 @@ import java.awt.Color;
 public class Dashbord extends javax.swing.JFrame {
 
     /**
-     * Creates new form Dashbord
+     * Creates new form Dashboard
      */
     int xx, xy;
     public Dashbord() {
@@ -724,6 +726,11 @@ public class Dashbord extends javax.swing.JFrame {
         // TODO add your handling code here:
         ButonBook.setBackground(new Color(250, 250, 250)); //untuk mengganti warna ketika mouse di arahkan ke Dashboard
         PanelLine5.setBackground(new Color(0, 102, 153));
+        
+        Panelinti.removeAll();
+        Panelinti.add(new MenuBuku());
+        Panelinti.repaint();
+        Panelinti.revalidate();
     }//GEN-LAST:event_ButonBookMouseClicked
 
     private void ButonOfficerMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButonOfficerMouseExited
@@ -758,6 +765,11 @@ public class Dashbord extends javax.swing.JFrame {
         // TODO add your handling code here:
         ButonUsers.setBackground(new Color(240, 240, 240)); //Pada source ini kami menambahkan kodingan untuk menampilkan menu dashboard kedalam dashboard yang sudah dibuat
         PanelLine2.setBackground(new Color(0, 102, 153));
+        
+        Panelinti.removeAll();
+        Panelinti.add(new MenuAnggota1());
+        Panelinti.repaint();
+        Panelinti.revalidate();
     }//GEN-LAST:event_ButonUsersMouseClicked
 
     private void ButonDashboardMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButonDashboardMouseExited
@@ -847,17 +859,13 @@ public class Dashbord extends javax.swing.JFrame {
     private javax.swing.JLabel Menu;
     private javax.swing.JLabel Menu2;
     private javax.swing.JPanel PanelAnggota1;
-    private javax.swing.JPanel PanelAnggota2;
     private javax.swing.JPanel PanelBook;
     private javax.swing.JPanel PanelDashboard;
-    private javax.swing.JPanel PanelDashboard1;
     private javax.swing.JPanel PanelDashboard3;
     private javax.swing.JPanel PanelDashboard4;
     private javax.swing.JPanel PanelDashboard5;
     private javax.swing.JPanel PanelLine;
-    private javax.swing.JPanel PanelLine1;
     private javax.swing.JPanel PanelLine2;
-    private javax.swing.JPanel PanelLine3;
     private javax.swing.JPanel PanelLine4;
     private javax.swing.JPanel PanelLine5;
     private javax.swing.JPanel PanelLine7;
