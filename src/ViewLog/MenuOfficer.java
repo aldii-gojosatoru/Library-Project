@@ -47,7 +47,7 @@ public class MenuOfficer extends javax.swing.JPanel {
         jLabel3 = new javax.swing.JLabel();
         AddBook = new javax.swing.JButton();
         RemoveBook = new javax.swing.JButton();
-        jPanel1 = new javax.swing.JPanel();
+        ButtonView = new javax.swing.JPanel();
 
         setBackground(new java.awt.Color(204, 255, 255));
         setPreferredSize(new java.awt.Dimension(1045, 750));
@@ -241,14 +241,14 @@ public class MenuOfficer extends javax.swing.JPanel {
 
         RemoveBook.setText("HAPUS BUKU");
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout ButtonViewLayout = new javax.swing.GroupLayout(ButtonView);
+        ButtonView.setLayout(ButtonViewLayout);
+        ButtonViewLayout.setHorizontalGroup(
+            ButtonViewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 215, Short.MAX_VALUE)
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        ButtonViewLayout.setVerticalGroup(
+            ButtonViewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 203, Short.MAX_VALUE)
         );
 
@@ -282,7 +282,7 @@ public class MenuOfficer extends javax.swing.JPanel {
                         .addComponent(jLabel2))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(427, 427, 427)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(ButtonView, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -293,7 +293,7 @@ public class MenuOfficer extends javax.swing.JPanel {
                     .addComponent(jLabel3)
                     .addComponent(jLabel2))
                 .addGap(42, 42, 42)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(ButtonView, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
@@ -322,26 +322,22 @@ public class MenuOfficer extends javax.swing.JPanel {
     private javax.swing.JLabel Buku;
     private javax.swing.JLabel Buku1;
     private javax.swing.JLabel Buku2;
-    private javax.swing.JLabel Buku3;
+    private javax.swing.JPanel ButtonView;
     private javax.swing.JLabel IconAnggota;
     private javax.swing.JLabel IconAnggota2;
     private javax.swing.JLabel IconAnggota3;
     private javax.swing.JLabel IconAnggota4;
-    private javax.swing.JLabel IconAnggota5;
     private javax.swing.JLabel Jumlah;
     private javax.swing.JLabel Jumlah2;
     private javax.swing.JLabel Jumlah3;
     private javax.swing.JLabel Jumlah4;
-    private javax.swing.JLabel Jumlah5;
     private javax.swing.JPanel KartuAnggota;
     private javax.swing.JPanel KartuAnggota2;
     private javax.swing.JPanel KartuAnggota3;
     private javax.swing.JPanel KartuAnggota4;
-    private javax.swing.JPanel KartuAnggota5;
     private javax.swing.JButton RemoveBook;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

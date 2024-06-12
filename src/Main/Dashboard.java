@@ -6,6 +6,10 @@ package Main;
 
 import ViewLog.MenuDashboard;
 import ViewLog.MenuAnggota;
+import ViewLog.MenuBuku;
+import ViewLog.MenuOfficer;
+import ViewLog.MenuPeminjaman;
+import ViewLog.MenuPengembalian;
 import java.awt.Color;
 /**
  *
@@ -59,6 +63,10 @@ public class Dashboard extends javax.swing.JFrame {
         PanelLine5 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         ButonBook = new javax.swing.JLabel();
+        PanelBook2 = new javax.swing.JPanel();
+        PanelLine10 = new javax.swing.JPanel();
+        jLabel10 = new javax.swing.JLabel();
+        btnOfficer = new javax.swing.JLabel();
         Panelkanan = new javax.swing.JPanel();
         Panelatas = new javax.swing.JPanel();
         Paneldasar = new javax.swing.JPanel();
@@ -179,7 +187,7 @@ public class Dashboard extends javax.swing.JFrame {
 
         ButonRiwayat.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
         ButonRiwayat.setForeground(new java.awt.Color(102, 102, 102));
-        ButonRiwayat.setText("Riwaayat");
+        ButonRiwayat.setText("Riwayat");
         ButonRiwayat.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ButonRiwayatMouseClicked(evt);
@@ -462,7 +470,7 @@ public class Dashboard extends javax.swing.JFrame {
                 .addComponent(jLabel6)
                 .addGap(18, 18, 18)
                 .addComponent(ButonBook, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(44, Short.MAX_VALUE))
+                .addContainerGap(56, Short.MAX_VALUE))
             .addGroup(PanelBookLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(PanelBookLayout.createSequentialGroup()
                     .addContainerGap()
@@ -474,13 +482,76 @@ public class Dashboard extends javax.swing.JFrame {
             .addGroup(PanelBookLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(PanelBookLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 35, Short.MAX_VALUE)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 47, Short.MAX_VALUE)
                     .addComponent(ButonBook, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
             .addGroup(PanelBookLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(PanelBookLayout.createSequentialGroup()
                     .addContainerGap()
                     .addComponent(PanelLine5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+        );
+
+        PanelBook2.setBackground(new java.awt.Color(255, 255, 255));
+
+        PanelLine10.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout PanelLine10Layout = new javax.swing.GroupLayout(PanelLine10);
+        PanelLine10.setLayout(PanelLine10Layout);
+        PanelLine10Layout.setHorizontalGroup(
+            PanelLine10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 10, Short.MAX_VALUE)
+        );
+        PanelLine10Layout.setVerticalGroup(
+            PanelLine10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 35, Short.MAX_VALUE)
+        );
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/leader.png"))); // NOI18N
+
+        btnOfficer.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
+        btnOfficer.setForeground(new java.awt.Color(102, 102, 102));
+        btnOfficer.setText("Officer");
+        btnOfficer.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnOfficerMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnOfficerMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnOfficerMouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout PanelBook2Layout = new javax.swing.GroupLayout(PanelBook2);
+        PanelBook2.setLayout(PanelBook2Layout);
+        PanelBook2Layout.setHorizontalGroup(
+            PanelBook2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelBook2Layout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addComponent(jLabel10)
+                .addGap(18, 18, 18)
+                .addComponent(btnOfficer, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(44, Short.MAX_VALUE))
+            .addGroup(PanelBook2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(PanelBook2Layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(PanelLine10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(193, Short.MAX_VALUE)))
+        );
+        PanelBook2Layout.setVerticalGroup(
+            PanelBook2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelBook2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(PanelBook2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, 35, Short.MAX_VALUE)
+                    .addComponent(btnOfficer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+            .addGroup(PanelBook2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(PanelBook2Layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(PanelLine10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
@@ -511,7 +582,8 @@ public class Dashboard extends javax.swing.JFrame {
                                     .addComponent(PanelBook, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(PanelDashboard3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(PanelDashboard5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(PanelAnggota1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(PanelAnggota1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(PanelBook2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(12, 12, 12)))))
                 .addGap(163, 163, 163))
         );
@@ -532,15 +604,17 @@ public class Dashboard extends javax.swing.JFrame {
                 .addComponent(PanelAnggota1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PanelBook, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(1, 1, 1)
+                .addComponent(PanelBook2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(PanelDashboard5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PanelDashboard3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(97, 97, 97)
+                .addGap(43, 43, 43)
                 .addComponent(Menu2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PanelDashboard4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(283, Short.MAX_VALUE))
+                .addContainerGap(271, Short.MAX_VALUE))
         );
 
         getContentPane().add(Panelkiri, java.awt.BorderLayout.LINE_START);
@@ -613,6 +687,11 @@ public class Dashboard extends javax.swing.JFrame {
         // TODO add your handling code here:
         ButonPengembalian.setBackground(new Color(250, 250, 250)); //untuk mengganti warna ketika mouse di arahkan ke Dashboard
         PanelLine7.setBackground(new Color(0, 102, 153));
+        
+        Panelinti.removeAll();
+        Panelinti.add(new MenuPengembalian());
+        Panelinti.repaint();
+        Panelinti.revalidate();
     }//GEN-LAST:event_ButonPengembalianMouseExited
 
     private void ButonPengembalianMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButonPengembalianMouseEntered
@@ -625,6 +704,11 @@ public class Dashboard extends javax.swing.JFrame {
         // TODO add your handling code here:
         ButonPengembalian.setBackground(new Color(250, 250, 250)); //untuk mengganti warna ketika mouse di arahkan ke Dashboard
         PanelLine7.setBackground(new Color(0, 102, 153));
+        
+        Panelinti.removeAll();
+        Panelinti.add(new MenuPengembalian());
+        Panelinti.repaint();
+        Panelinti.revalidate();
     }//GEN-LAST:event_ButonPengembalianMouseClicked
 
     private void ButonRiwayatMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButonRiwayatMouseExited
@@ -661,6 +745,11 @@ public class Dashboard extends javax.swing.JFrame {
         // TODO add your handling code here:
         ButonBook.setBackground(new Color(250, 250, 250)); //untuk mengganti warna ketika mouse di arahkan ke Dashboard
         PanelLine5.setBackground(new Color(0, 102, 153));
+        
+        Panelinti.removeAll();
+        Panelinti.add(new MenuBuku());
+        Panelinti.repaint();
+        Panelinti.revalidate();
     }//GEN-LAST:event_ButonBookMouseClicked
 
     private void ButonDashboardMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButonDashboardMouseExited
@@ -690,6 +779,11 @@ public class Dashboard extends javax.swing.JFrame {
         // TODO add your handling code here:
         ButonPeminjaman.setBackground(new Color(240, 240, 240)); //untuk mengganti warna ketika mouse di arahkan ke Dashboard
         PanelLine9.setBackground(new Color(0, 102, 153));
+        
+        Panelinti.removeAll();
+        Panelinti.add(new MenuPeminjaman());
+        Panelinti.repaint();
+        Panelinti.revalidate();
     }//GEN-LAST:event_ButonPeminjamanMouseClicked
 
     private void ButonPeminjamanMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButonPeminjamanMouseEntered
@@ -702,6 +796,11 @@ public class Dashboard extends javax.swing.JFrame {
         // TODO add your handling code here:
         ButonPeminjaman.setBackground(new Color(250, 250, 250)); //untuk mengganti warna ketika mouse di arahkan ke Dashboard
         PanelLine9.setBackground(new Color(0, 102, 153));
+        
+        Panelinti.removeAll();
+        Panelinti.add(new MenuPeminjaman());
+        Panelinti.repaint();
+        Panelinti.revalidate();
     }//GEN-LAST:event_ButonPeminjamanMouseExited
 
     private void ButonAnggotaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButonAnggotaMouseClicked
@@ -747,6 +846,29 @@ public class Dashboard extends javax.swing.JFrame {
     private void PanelDashboardMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PanelDashboardMouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_PanelDashboardMouseClicked
+
+    private void btnOfficerMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnOfficerMouseClicked
+        // TODO add your handling code here:
+        btnOfficer.setBackground(new Color(240, 240, 240)); //Pada source ini kami menambahkan kodingan untuk menampilkan menu dashboard kedalam dashboard yang sudah dibuat
+        PanelLine10.setBackground(new Color(0, 102, 153)); 
+        
+        Panelinti.removeAll();
+        Panelinti.add(new MenuOfficer());
+        Panelinti.repaint();
+        Panelinti.revalidate();
+    }//GEN-LAST:event_btnOfficerMouseClicked
+
+    private void btnOfficerMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnOfficerMouseEntered
+        // TODO add your handling code here:
+         btnOfficer.setBackground(new Color(250, 250, 250)); //untuk mengganti warna ketika mouse di arahkan ke Dashboard
+        PanelLine10.setBackground(new Color(0, 102, 153));
+    }//GEN-LAST:event_btnOfficerMouseEntered
+
+    private void btnOfficerMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnOfficerMouseExited
+        // TODO add your handling code here:
+        btnOfficer.setBackground(new Color(255, 255, 255)); //untuk mengganti warna ketika mouse tidak di arahkan ke Dashboard
+        PanelLine10.setBackground(new Color(255, 255, 255));
+    }//GEN-LAST:event_btnOfficerMouseExited
 
     /**
      * @param args the command line arguments
@@ -802,13 +924,17 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel Menu2;
     private javax.swing.JPanel PanelAnggota1;
     private javax.swing.JPanel PanelBook;
+    private javax.swing.JPanel PanelBook1;
+    private javax.swing.JPanel PanelBook2;
     private javax.swing.JPanel PanelDashboard;
     private javax.swing.JPanel PanelDashboard3;
     private javax.swing.JPanel PanelDashboard4;
     private javax.swing.JPanel PanelDashboard5;
     private javax.swing.JPanel PanelLine;
+    private javax.swing.JPanel PanelLine10;
     private javax.swing.JPanel PanelLine2;
     private javax.swing.JPanel PanelLine5;
+    private javax.swing.JPanel PanelLine6;
     private javax.swing.JPanel PanelLine7;
     private javax.swing.JPanel PanelLine8;
     private javax.swing.JPanel PanelLine9;
@@ -818,6 +944,8 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JPanel Panelkanan;
     private javax.swing.JPanel Panelkiri;
     private javax.swing.JLabel PnBook;
+    private javax.swing.JLabel btnOfficer;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;

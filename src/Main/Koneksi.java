@@ -29,4 +29,8 @@ public class Koneksi {
         }
         return koneksi;
      }
+
+    public static com.mysql.jdbc.Connection getConnection() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
