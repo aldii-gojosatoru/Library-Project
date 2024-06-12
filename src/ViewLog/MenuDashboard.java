@@ -227,7 +227,7 @@ public class MenuDashboard extends javax.swing.JPanel {
                 {null, null, null, null}
             },
             new String [] {
-                "ID Buku", "User", "Peminjaman", "Pengembalian"
+                "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
@@ -290,18 +290,22 @@ public class MenuDashboard extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Anggota;
+    private javax.swing.JLabel Anggota1;
     private javax.swing.JLabel Buku;
     private javax.swing.JLabel Buku1;
     private javax.swing.JLabel Buku2;
     private javax.swing.JLabel IconAnggota;
+    private javax.swing.JLabel IconAnggota1;
     private javax.swing.JLabel IconAnggota2;
     private javax.swing.JLabel IconAnggota3;
     private javax.swing.JLabel IconAnggota4;
     private javax.swing.JLabel Jumlah;
+    private javax.swing.JLabel Jumlah1;
     private javax.swing.JLabel Jumlah2;
     private javax.swing.JLabel Jumlah3;
     private javax.swing.JLabel Jumlah4;
     private javax.swing.JPanel KartuAnggota;
+    private javax.swing.JPanel KartuAnggota1;
     private javax.swing.JPanel KartuAnggota2;
     private javax.swing.JPanel KartuAnggota3;
     private javax.swing.JPanel KartuAnggota4;
